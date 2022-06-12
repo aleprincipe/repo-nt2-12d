@@ -1,0 +1,15 @@
+use('bddbarberia');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.servicios.drop();
+
+// Insert a few documents into the sales collection.
+db.servicios.insertMany([
+  {"_id": 1, "servicio": "Corte"},
+  {"_id": 2, "servicio": "Barba"},
+  {"_id": 3, "servicio": "Coloracion"},
+  {"_id": 4, "servicio": "Peinado"},
+  {"_id": 5, "servicio": "Tratamientos"},
+]);
+
